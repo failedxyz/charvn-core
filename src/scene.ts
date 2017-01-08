@@ -1,4 +1,4 @@
-import { VNComponent } from "./vncomponent";
+import { VNComponent } from "./vnComponent";
 
 export class Scene extends VNComponent {
 

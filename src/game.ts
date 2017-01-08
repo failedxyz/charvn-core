@@ -1,4 +1,4 @@
-import { GameState } from "./gamestate";
+import { GameState } from "./gameState";
 import { Scene } from "./scene";
 
 export class Game {

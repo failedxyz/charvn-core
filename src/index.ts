@@ -1,3 +1,3 @@
-import { VNComponent } from "./vncomponent";
+import { VNComponent } from "./vnComponent";
 
 export { VNComponent };

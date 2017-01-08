@@ -1,0 +1,33 @@
+{
+  "name": "charvn-core",
+  "version": "0.0.1",
+  "description": "CharVN",
+  "main": "build/charvn.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint src/**/*.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/failedxyz/charvn-core.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/failedxyz/charvn-core/issues"
+  },
+  "homepage": "https://github.com/failedxyz/charvn-core#readme",
+  "dependencies": {
+    "@types/uuid": "^2.0.29",
+    "install": "^0.8.4",
+    "minimist": "^1.2.0",
+    "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/minimist": "^1.2.0",
+    "@types/node": "^6.0.58",
+    "tslint": "^4.3.1",
+    "typescript": "^2.1.4"
+  }
+}

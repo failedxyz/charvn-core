@@ -1,12 +1,11 @@
-import { GameState } from "./gamestate";
+import { GameState } from "./gameState";
 import { Scene } from "./scene";
 
-class Game {
+export class Game {
+    private initialScene: Scene;
     private scenes: Scene[];
     private state: GameState;
     constructor() {
         // shiet
     }
 }
-
-export { Game };

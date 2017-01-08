@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/failedxyz/charvn-core#readme",
   "dependencies": {
+    "@types/gl-matrix": "^2.2.34",
     "@types/uuid": "^2.0.29",
+    "gl-matrix": "^2.3.2",
     "install": "^0.8.4",
     "minimist": "^1.2.0",
     "uuid": "^3.0.1"

@@ -1,4 +1,4 @@
-import { VNComponent } from "./vncomponent";
+import { VNComponent } from "./vnComponent";
 
 import { DisplayState } from "./displayState";
 import { GameState } from "./gameState";

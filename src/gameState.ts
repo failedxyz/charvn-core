@@ -1,4 +1,4 @@
-import { VNComponent } from "./vncomponent";
+import { VNComponent } from "./vnComponent";
 
 import { Command } from "./command";
 import { CommandSequence } from "./commandSequence";

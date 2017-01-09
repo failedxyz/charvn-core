@@ -5,6 +5,7 @@
   "main": "build/charvn.js",
   "scripts": {
     "build": "tsc",
+    "install": "tsc -p .",
     "lint": "tslint src/**/*.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

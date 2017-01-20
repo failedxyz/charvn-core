@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "CharVN",
   "main": "build/charvn.js",
+  "typings": "build/charvn.d.ts",
   "scripts": {
     "build": "tsc",
     "lint": "tslint src/**/*.ts",

@@ -17,7 +17,7 @@ export class FileNode extends Node {
     /** Referenced resource paths */
     private resources: ResourceNode[];
 
-    constructor(scenes: SectionNode[]) {
-        super(scenes);
+    constructor(sections: SectionNode[]) {
+        super(sections);
     }
 }

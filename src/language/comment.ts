@@ -1,6 +1,6 @@
 import { Node } from "./node";
 
-export class CommandNode extends Node {
+export class CommentNode extends Node {
     constructor() {
         super([]);
     }

@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc",
     "lint": "tslint src/**/*.ts",
+    "precommit": "npm run lint && npm run build && npm run test",
     "test": "mocha build/**/*.test.js"
   },
   "repository": {

@@ -47,7 +47,10 @@ export class GameState extends VNComponent {
         this.currentCommandIndex = state.currentCommandIndex as number;
         this.currentSceneIndex = state.currentSceneIndex as number;
         this.variables.clear();
-        for (const key of state.variables) {
+        for (const key in state.variables) {
+            if (!state.variables.hasOwnProperty(key)) {
+                continue;
+            }
             this.variables.set(key, state.variables[key]);
         }
 

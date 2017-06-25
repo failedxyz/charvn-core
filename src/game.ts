@@ -25,20 +25,26 @@ export class Game extends VNComponent {
     }
 
     /**
-     * Save the state to an object
+     * Save the state to a string
      *
-     * @return Serialized state object
+     * @return State string
      */
-    public saveState(): any {
-        return "{}";
+    public saveState(): string {
+        return JSON.stringify(this.state.serialize());
     }
 
     /**
-     * Load the state from a serialized object
+     * Load the state from a string
      *
-     * @param state Serialized state object
+     * @param state State string
+     * @return Whether or not loading was successful
      */
-    public loadState(state: any) {
-        return;
+    public loadState(stateString: string) {
+        try {
+            const state: any = JSON.parse(stateString);
+            return this.state.deserialize(state);
+        } catch (e) {
+            return false;
+        }
     }
 }

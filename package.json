@@ -6,28 +6,35 @@
   "scripts": {
     "build": "tsc",
     "lint": "tslint src/**/*.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "precommit": "npm run lint && npm run build && npm run test",
+    "test": "mocha build/**/*.test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/failedxyz/charvn-core.git"
+    "url": "git+https://github.com/iptq/charvn-core.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/failedxyz/charvn-core/issues"
+    "url": "https://github.com/iptq/charvn-core/issues"
   },
-  "homepage": "https://github.com/failedxyz/charvn-core#readme",
+  "homepage": "https://github.com/iptq/charvn-core#readme",
   "dependencies": {
-    "@types/uuid": "^2.0.29",
-    "install": "^0.8.4",
+    "@types/gl-matrix": "^2.2.34",
+    "@types/uuid": "^3.0.0",
+    "gl-matrix": "^2.3.2",
+    "install": "^0.10.1",
     "minimist": "^1.2.0",
-    "uuid": "^3.0.1"
+    "uuid": "^3.1.0"
   },
   "devDependencies": {
+    "@types/chai": "^4.0.1",
     "@types/minimist": "^1.2.0",
-    "@types/node": "^6.0.58",
-    "tslint": "^4.3.1",
-    "typescript": "^2.1.4"
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^8.0.2",
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2",
+    "tslint": "^5.4.3",
+    "typescript": "^2.3.4"
   }
 }

@@ -5,14 +5,12 @@ import { GameState } from "./gameState";
 import { Scene } from "./scene";
 
 export class Game extends VNComponent {
-    private initialScene: Scene;
     private scenes: Scene[];
     private state: GameState;
 
-    constructor(initialScene: Scene, scenes: Scene[], state: GameState) {
+    constructor(scenes: Scene[], state: GameState) {
         super();
 
-        this.initialScene = initialScene;
         this.scenes = scenes;
         this.state = state;
     }

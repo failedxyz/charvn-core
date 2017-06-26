@@ -9,6 +9,7 @@ export enum ResourceType {
 
 export class Resource extends VNComponent {
     public readonly type: ResourceType;
+
     constructor(type: ResourceType) {
         super();
 
